@@ -1,0 +1,20 @@
+<h1>Index.razor</h1>
+@page "/"
+
+<h1>Willkommen zu Blazor WebAssembly!</h1>
+
+<p>
+    Dies ist die Startseite der Anwendung. Hier können Sie Beispielcode sehen, der Daten anzeigt.
+</p>
+
+<button @onclick="IncrementCount">Zähler erhöhen</button>
+<p>Aktueller Zählerstand: @currentCount</p>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
